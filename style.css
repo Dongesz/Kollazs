@@ -12,6 +12,7 @@ body {
     position: fixed;
     height: 100%;
     overflow: auto;
+    font-family: 'Josefin Sans', sans-serif;
   }
   
   .sidebar a {
