@@ -1,60 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:black;
+  color: white;
+  text-align: center;
+  
+}
 
 body {
-    margin: 0;
-    font-family: 'Sedgwick Ave';
-    background-color: #a9a9a9;
-  }
-  
+  margin: 0;
+  font-family: 'Sedgwick Ave';
+  background-color: #a9a9a9;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  font-family: 'Secular One', sans-serif;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #343535;
+  color: #ffffff;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: #ffffff;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
   .sidebar {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-    font-family: 'Secular One', sans-serif;
+    width: 100%;
+    height: auto;
+    position: relative;
   }
-  
+
   .sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
+    float: left;
   }
-   
-  .sidebar a.active {
-    background-color: #343535;
-    color: #ffffff;
-  }
-  
-  .sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: #ffffff;
-  }
-  
+
   div.content {
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
+    margin-left: 0;
   }
-  
-  @media screen and (max-width: 700px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
   }
-  
-  @media screen and (max-width: 400px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
-  }
+}
