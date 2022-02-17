@@ -1,11 +1,11 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang="hu">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> MMM HOME</title>
+    <title> Űrlap</title>
     <link rel="stylesheet" href="style.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -30,30 +30,47 @@
 
         <h1>Majoros Máté</h1>
 
-        <form name="rendeles">
-            <h1>Pizza Rendelés:</h1>
-            <fieldset>
-                <legend>Vevő adatai:</legend>
-                <p><label>Név: <input type="text" name="nev">
-                        <small></small></label></p>
+        <h2>Űrlap: </h2>
+        <form name="interju">
+         
+            
+            <fieldset style="width: fit-content; border: 2px black solid; " > 
+                <legend>Állásjelentkezés:</legend>
+                <p><label>vezetéknév: <input type="text" name="nev" size="6" >  keresztnév: <input type="text" name="knev" size="6"><small></small></label></p>
+                
+                <p><label>Születési dátum: <input type="date" name="kiszallitas"></label></p>
+        
+                <p><label>Lakcím: <input type="text" name="telefon" size="25">  <small>város, útca, házszám</small></label></p>
+
+                <p><label>Email: <input type="email" name="telefon" size="20"></label></p>
+
                 <p><label>Telefon: <input type="tel" name="telefon" size="10"></label></p>
-            </fieldset>
-            <fieldset>
-                <legend>Pizza mérete</legend>
-                <p><label><input type="radio" name="meret" value="kicsi">kicsi</label></p>
-                <p><label><input type="radio" name="meret" value="nagy">nagy</label></p>
-            </fieldset>
-            <fieldset>
-                <legend>Feltétek</legend>
-                <p><label><input type="checkbox" name="feltet1" value="sonka">sonka</label></p>
-                <p><label><input type="checkbox" name="feltet2" value="sajt">sajt</label></p>
-                <p><label><input type="checkbox" name="feltet3" value="gomba">gomba</label></p>
-            </fieldset>
-            <fieldset>
-                <legend>Végezetül</legend>
-                <p><label>mennyiség: <input type="number" name="mennyiseg"> db</label></p>
-                <p><label>egyéb kívánságok: <textarea name="egyeb"></textarea></label></p>
-                <p><label>Kért szállítási idő: <input type="time" name="kiszallitas"></label></p>
+                
+                <p><label >Megpályázott Pozíció: <br><br>      <input type="checkbox"  ></label> 
+                <label for="vehicle1">Munka 1</label><br>
+
+                <input type="checkbox"  >
+
+                <label for="vehicle2"> Munka 2</label><br>
+
+                <input type="checkbox"  >
+
+                <label for="Munka 2">Munka 3</label><br>
+
+                <input type="checkbox"  >
+
+                <label for="Munka 2">Bármely pozíció</label><br><br>
+
+                <input type="submit" value="Submit"></p>
+
+                <p><label>Kezdés dátuma: <input type="date" name="kiszallitas"></label></p>
+
+                <label for="myfile">Önéletrajz:</label>
+                <input type="file" id="myfile" name="myfile"><br><br>
+                <input type="submit">
+
+                <p><label>Kísérő Levél:  <textarea name="egyeb" aria-setsize="40"></textarea></label></p>
+
                 <br>
                 <input type="reset" name="visszaallitas">
                 <input type="submit" name="kuldes">
@@ -64,7 +81,7 @@
 
     <div class="footer">
             <p>  
-                 email: <a href="majormate12@gmail.com">majormate12@gmail.com</a>  Github:   <a href="https://github.com/Dongesz"> github.com/Dongesz</a>
+                 email: <a href="majormate12@gmail.com">majormate12@gmail.com</a>  Github:   <a href="https://github.com/Dongesz"> github.com/Dongesz</a> Facebook: <a href="https://www.facebook.com/mate.majoros.754">facebook.com/mate.majoros.754</a>
             </p> 
             
            
