@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+  <html lang="hu"> 
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Pitagorasz</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+
+  </head>
+<body>
+
+  
+
+<div class="sidebar">
+
+    <a href="https://dongesz.github.io/WEBLAP/">HOME</a>
+    <a href="https://dongesz.github.io/WEBLAP/keplink">KÉPLINK</a>
+    <a href="https://dongesz.github.io/WEBLAP/listak">LISTÁK </a>
+    <a href="https://dongesz.github.io/WEBLAP/orarend">ÓRAREND</a>
+    <a href="https://dongesz.github.io/WEBLAP/evszakok">ÉVSZAKOK</a>
+    <a  href="https://dongesz.github.io/WEBLAP/urlap">ŰRLAP</a>
+    <a  href="https://dongesz.github.io/WEBLAP/alapmuv">SZÁMOLÓGÉP</a>
+    <a  href="https://dongesz.github.io/WEBLAP/reg">REGISZTRÁCIÓ</a>
+    <a  href="https://dongesz.github.io/WEBLAP/masol">MÁSOLÓ</a>
+    <a class="active" href="https://dongesz.github.io/WEBLAP/pita">PITAGORASZ</a>
+    <a  href="https://dongesz.github.io/WEBLAP/tablazat">TÁBLÁZAT</a>
+
+</div>
+
+
+<div class="content">
+    <h1>Majoros Máté</h1>
+    <h2>Pitagorasz tétel:</h2>
+
+    <input type="number" name="a" id="var_a" placeholder="a értéke"><br>
+    <input type="number" name="b" id="var_b" placeholder="b értéke"><br><br>
+    <button onclick="pita(var_a.value, var_b.value)">c értéke = </button>
+    <p style="border: 1px solid black; width: 160px; height: 20px; border-radius: 3px;" id="eredmeny"></p>
+
+    <script>
+        function pita(a, b) {
+            document.getElementById('eredmeny').innerHTML = Math.sqrt(a * a + b * b)
+        }
+    </script>
+  </div>
+  

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+  <html lang="hu"> 
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Pitagorasz</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+
+  </head>
+<body>
+
+  
+
+<div class="sidebar">
+
+    <a href="https://dongesz.github.io/WEBLAP/">HOME</a>
+    <a href="https://dongesz.github.io/WEBLAP/keplink">KÉPLINK</a>
+    <a href="https://dongesz.github.io/WEBLAP/listak">LISTÁK </a>
+    <a href="https://dongesz.github.io/WEBLAP/orarend">ÓRAREND</a>
+    <a href="https://dongesz.github.io/WEBLAP/evszakok">ÉVSZAKOK</a>
+    <a  href="https://dongesz.github.io/WEBLAP/urlap">ŰRLAP</a>
+    <a class="active"  href="https://dongesz.github.io/WEBLAP/alapmuv">SZÁMOLÓGÉP</a>
+    <a  href="https://dongesz.github.io/WEBLAP/reg">REGISZTRÁCIÓ</a>
+    <a  href="https://dongesz.github.io/WEBLAP/masol">MÁSOLÓ</a>
+    <a  href="https://dongesz.github.io/WEBLAP/pita">PITAGORASZ</a>
+    <a  href="https://dongesz.github.io/WEBLAP/tablazat">TÁBLÁZAT</a>
+
+</div>
+<div class="content">
+
+<h1>Majoros Máté</h1>
+<h2>Számologép:</h2>
+<fieldset style="width: fit-content; border: 2px black solid; " > 
+        <legend>Alap Számológép</legend>
+        <form action="javascript:void(0);">
+            <input class="inp" type="number" name="nbr" id="x_ert" placeholder="x érték" required><br>
+            <input class="inp" type="number" name="nbr" id="y_ert" placeholder="y érték" required><br>
+            <input class="but" type="button" value="Összeadás" onclick="osszead()"> <input type="text" id="ossz" readonly>
+            <br>
+            <input class="but" type="button" value="Kivonás" onclick="kivon()"> <input type="text" id="kiv" readonly> <br>
+            <input class="but" type="button" value="Szorzás" onclick="szorz()"> <input type="text" id="szor" readonly> <br>
+            <input class="but" type="button" value="Osztás" onclick="oszt()"> <input type="text" id="osztas" readonly> <br> <br>
+            <input class="but" type="submit" name="sub" id="subm" value="SZÁMOLD KI MINDET!" onclick="osszead();kivon();szorz();oszt()">
+          
+            <input type="reset" name="visszaallitas">
+        </form>
+    </fieldset>
+    <script>
+        function osszead() {
+            ossz.value = (Number(x_ert.value) + Number(y_ert.value))
+        }
+
+        function kivon(x, y) {
+            kiv.value = (Number(x_ert.value) - Number(y_ert.value))
+        }
+
+        function szorz(x, y) {
+            szor.value = (Number(x_ert.value) * Number(y_ert.value)).toFixed(2)
+        }
+
+        function oszt(x, y) {
+            osztas.value = (Number(x_ert.value) / Number(y_ert.value)).toFixed(2)
+        }
+    </script>
+</div>
